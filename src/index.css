@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+@theme {
+  --color-aura-vide: #0A0A14;
+  --color-aura-gold: #D4AF37;
+  --color-aura-fantome: #F0EFF4;
+  --color-aura-graphite: #18181B;
+
+  --font-sans: 'Sora', sans-serif;
+  --font-serif: 'Instrument Serif', serif;
+  --font-mono: 'Fira Code', monospace;
+
+  --animate-glow-pulse: glow 4s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  0% { opacity: 0.5; transform: scale(1); }
+  100% { opacity: 1; transform: scale(1.05); }
+}
+
+@layer base {
+  body {
+    background-color: var(--color-aura-vide);
+    color: var(--color-aura-fantome);
+    font-family: var(--font-sans);
+    overflow-x: hidden;
+  }
+}
+
+@layer utilities {
+  .text-glow {
+    text-shadow: 0 0 20px rgba(212, 175, 55, 0.4);
+  }
+  
+  .glass-panel {
+    background-color: color-mix(in srgb, var(--color-aura-graphite) 40%, transparent);
+    backdrop-filter: blur(12px);
+    border: 1px solid color-mix(in srgb, var(--color-aura-fantome) 10%, transparent);
+  }
+}
