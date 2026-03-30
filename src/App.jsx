@@ -84,8 +84,8 @@ function App() {
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] sm:w-[600px] h-[300px] sm:h-[600px] bg-aura-gold/15 blur-[100px] sm:blur-[120px] rounded-full pointer-events-none animate-glow-pulse"></div>
           
           <div className="hero-badge inline-flex items-center gap-2 px-4 py-2 rounded-full border border-aura-gold/30 bg-aura-gold/10 text-aura-gold text-xs sm:text-sm font-mono mb-8">
-            <Sparkles size={16} />
-            <span>Open for new ventures</span>
+            <Briefcase size={16} />
+            <span>Disponible pour de nouvelles opportunités</span>
           </div>
           
           <h1 className="hero-title text-5xl sm:text-6xl md:text-8xl font-bold tracking-tighter mb-4 text-glow leading-tight">
